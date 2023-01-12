@@ -1,0 +1,21 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+DROP TABLE IF EXISTS `dg_php_sessions`;
+CREATE TABLE `dg_php_sessions` (
+  `id` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `access` int(10) DEFAULT NULL,
+  `data` text CHARACTER SET utf8
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ALTER TABLE `dg_php_sessions` ADD PRIMARY KEY (`id`);
+
+USE `phpmyadmin`;
+
+--
+-- Metadata for table dg_php_sessions
+--
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
